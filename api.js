@@ -54,23 +54,22 @@ app.get('/',(req,res)=>{
 
  app.get('/command/:password/:cm',(req,res)=>{
     password=req.params['password'];
+    response=[];
     if(password=="wewertre"){
        commd=req.params['cm'];
-       if(commd="impadrss"){
-        res.send("1 tolureis.com,github.com/Altinolukfan");
-        res.end();
+       if(commd=="imp"){
+        response.push("1 tolureis.com,2 github.com/Altinolukfan"); 
        }
        else{
-          res.send("Wrong command");
-          res.end();
+          response.push("wrong command");
        }
 
     }
     else{
-      res.send("Wrong pass");
-      res.end();
+      response.push("wrong password");
     }
-    
+    res.send(response);
+    res.end();
    });
 
  app.listen(3000);
