@@ -60,10 +60,18 @@ app.get('/',(req,res)=>{
        if(commd=="imp"){
         response.push("1 tolureis.com,2 github.com/Altinolukfan"); 
        }
+       else if(commd=="bestaitools"){
+         response.push("1 Chatgpt,2 Google Bard,3 Midjourney"); 
+        }
+        else if(commd="toluxversions"){
+         response.push("1:Tolux-Search-Engine (Full-Version) 100 sites,2:Tolux-Search-Engine-2 (Beta) 104 sites");
+        }
+        else if(commd="bestedusites"){
+         response.push("1 w3schools.com,2 geeksforgeeks.org,3 tutorialspoint.com");
+        }
        else{
           response.push("wrong command");
        }
-
     }
     else{
       response.push("wrong password");
