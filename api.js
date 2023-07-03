@@ -69,6 +69,9 @@ app.get('/',(req,res)=>{
         else if(commd=="bestedusites"){
          response.push("1 w3schools.com,2 geeksforgeeks.org,3 tutorialspoint.com");
         }
+        else if(commd=="alternativeaitools"){
+         response.push("1 playgroundai,2 Dall-e,3 Beatoven.ai,4 Elevenlabs.io");
+        }
        else{
           response.push("wrong command");
        }
