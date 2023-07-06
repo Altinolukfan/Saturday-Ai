@@ -64,13 +64,16 @@ app.get('/',(req,res)=>{
          response.push("1 Chatgpt,2 Google Bard,3 Midjourney"); 
         }
         else if(commd=="toluxversions"){
-         response.push("1:Tolux-Search-Engine (Full-Version) 100 sites,2:Tolux-Search-Engine-2 (Beta) 104 sites");
+         response.push("1:Tolux-Search-Engine (Full-Version) 100 sites,2:Tolux-Search-Engine-2 (Beta) 103 sites");
         }
         else if(commd=="bestedusites"){
          response.push("1 w3schools.com,2 geeksforgeeks.org,3 tutorialspoint.com");
         }
         else if(commd=="alternativeaitools"){
-         response.push("1 playgroundai,2 Dall-e,3 Beatoven.ai,4 Elevenlabs.io");
+         response.push("1 Playgroundai,2 Dall-e,3 Beatoven.ai,4 Elevenlabs.io");
+        }
+        else if(commd=="bestmalanalysissites"){
+         response.push("1 Virustotal,2 Hybrid Analysis,3 Any.run");
         }
        else{
           response.push("wrong command");
